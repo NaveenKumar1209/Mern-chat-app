@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
-import GenderCheckbox from "./GenderCheckbox";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import useSignup from "../../hooks/useSignup";
+import GenderCheckbox from "./GenderCheckbox";
 
 const SignUp = () => {
 	const [inputs, setInputs] = useState({
@@ -37,7 +37,7 @@ const SignUp = () => {
 						</label>
 						<input
 							type='text'
-							placeholder='John Doe'
+							placeholder='Naveen Kumar'
 							className='w-full input input-bordered  h-10'
 							value={inputs.fullName}
 							onChange={(e) => setInputs({ ...inputs, fullName: e.target.value })}
@@ -50,7 +50,7 @@ const SignUp = () => {
 						</label>
 						<input
 							type='text'
-							placeholder='johndoe'
+							placeholder='Naveen'
 							className='w-full input input-bordered h-10'
 							value={inputs.username}
 							onChange={(e) => setInputs({ ...inputs, username: e.target.value })}
